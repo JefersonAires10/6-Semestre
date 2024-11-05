@@ -42,3 +42,6 @@ while True:
     connectionSocket, addr = serverSocket.accept()
     thread = threading.Thread(target=process_operation, args=(connectionSocket,))
     thread.start()
+
+
+#tratar a mensagem que o cliente enviou
