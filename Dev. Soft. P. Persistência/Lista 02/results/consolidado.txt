@@ -1,0 +1,3 @@
+arquivo1.txt: 274 palavras, 1820 caracteres
+arquivo2.txt: 597 palavras, 4256 caracteres
+arquivo3.txt: 11 palavras, 77 caracteres

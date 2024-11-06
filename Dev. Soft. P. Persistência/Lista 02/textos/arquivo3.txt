@@ -1,0 +1,3 @@
+Aluno: Jeferson Aires de Sousa
+Matrícula: 540428
+Curso: Ciência da Computação
