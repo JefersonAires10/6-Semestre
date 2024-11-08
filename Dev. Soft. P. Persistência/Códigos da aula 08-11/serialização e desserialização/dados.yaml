@@ -1,0 +1,6 @@
+cursos:
+- Python
+- Django
+- Flask
+idade: 25
+nome: "Jo\xE3o"
