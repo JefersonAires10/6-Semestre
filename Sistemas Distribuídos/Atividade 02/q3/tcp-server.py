@@ -1,15 +1,17 @@
-import time
 from socket import *
 from threading import Thread
 
 def handle_client(connectionSocket):
     while True:
         sentence = connectionSocket.recv(1024).decode('utf-8')
-        print("Received message: ", sentence)
         if sentence == 'exit':
+            print("Client disconnected")
             break
-        capitalizedSentence = sentence.upper()
-        connectionSocket.send(capitalizedSentence.encode('utf-8'))
+        print(f"Client: {sentence}")
+        response = input("You: ")
+        connectionSocket.send(response.encode('utf-8'))
+        if response == 'exit':
+            break
     connectionSocket.close()
 
 serverPort = 12000
@@ -20,5 +22,6 @@ print("The server is ready to receive")
 
 while True:
     connectionSocket, addr = serverSocket.accept()
-    thread = Thread(target=handle_client, args=(connectionSocket,))
-    thread.start()
+    print(f"Connected to {addr}")
+    client_thread = Thread(target=handle_client, args=(connectionSocket,))
+    client_thread.start()
