@@ -1,5 +1,5 @@
 from typing import Union, List
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPExceptiojnv
 from pydantic import BaseModel
 
 app = FastAPI()
