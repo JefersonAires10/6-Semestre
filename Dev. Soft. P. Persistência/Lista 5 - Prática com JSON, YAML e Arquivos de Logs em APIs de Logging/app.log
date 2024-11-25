@@ -1,0 +1,5 @@
+2024-11-23 20:18:39,727 - INFO - Arquivo JSON 'data.json' carregado com sucesso.
+2024-11-23 20:18:39,727 - INFO - Processando registro: {'id': 1, 'name': 'John', 'age': 30}
+2024-11-23 20:18:39,727 - INFO - Processando registro: {'id': 2, 'name': 'Alice', 'age': 25}
+2024-11-23 20:18:39,727 - INFO - Processando registro: {'id': 3, 'name': 'Bob', 'age': None}
+2024-11-23 20:18:39,727 - WARNING - Erro no registro: Dado inv�lido: {'id': 3, 'name': 'Bob', 'age': None}
